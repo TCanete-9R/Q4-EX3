@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ex: 3 </title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container mt-5">
+		<h1>Magnitude</h1>
+			<label>Enter Magnitude:</label>
+			<input type="number" id="magnitude" class="form-control">
+
+        	<button class="btn btn-primary" onclick="magnitudeChecker(magnitude)">Check</button>
+        	<button class="btn btn-secondary" onclick="window.location.reload()">Refresh</button>
+
+		<script>
+			function magnitudeChecker(magnitude) {
+				var magnitudeInput = document.getElementById('magnitude').value;
+
+				if (magnitudeInput > 8) {
+					window.alert('Catastropic');
+				}
+
+				else if (magnitudeInput > 7.0 && magnitudeInput< 7.9) {
+					window.alert('Major Damage');
+				}
+
+				else if (magnitudeInput > 6.1 && magnitudeInput< 6.9) {
+					window.alert('Damage Likely');
+				}
+
+				else if (magnitudeInput > 5.5 && magnitudeInput< 6.0) {
+					window.alert('Slightly Damage');
+				}
+
+				else if (magnitudeInput > 2.5 && magnitudeInput< 5.4) {
+					window.alert('Rarely Damage');
+				}
+
+				if (magnitudeInput < 2.5) {
+					window.alert('Not Always Felt');
+				}
+			}
+		</script>
+
+		<footer>
+			<hr><p> &#169; AY 2025 | ICT 9-RUBY | EXERISE 3: MAGNITUDE | TARCISIUS JOHN C. CAÑETE</p>
+		</footer>
+	</div>
+
+	
+</body>
+</html>

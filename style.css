@@ -1,0 +1,26 @@
+ body {
+	text-align: center;
+	background-color: grey;
+	font-family: DM Serif Text;
+}
+
+div {
+	padding: 50px;
+	margin: 6%;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 15px;
+}
+
+
+.container {
+      max-width: 1000px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 100px;
+      border-radius: 15px;
+}
+
+h1 {
+	text-align: center;
+	color: Black;
+}
